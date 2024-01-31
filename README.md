@@ -41,12 +41,21 @@ connect_string= 'postgresql://your_username:your_password@localhost:your_port/yo
 4.  Run the application for load :
 python appsubmitlocal_v2.py
 
-## Usage
+## Usage for first upload app
 
 1.  Access the application in your web browser at http://localhost:8888.
 2.  Use the file upload section to upload CSV files.
 3.  The files will be saved to the "project/app_uploaded_files" directory, and information about the tables created in the database will be displayed.
 4.  Browse and download the uploaded files.
+
+## Usage for second report app
+
+1.  Access the application in your web browser at http://localhost:8888.
+2.  Use a text box to set the year for your query.
+3.  Once you set the year, the app shows these two querys:
+  a. Number of employees hired for each job and department in a specific year divided by quarter. The table must be ordered alphabetically by department and job.
+  b. List of IDs, names and number of employees hired of each department that hired more employees than the mean of employees hired in specific year for all the departments, ordered by the number of employees hired (descending)
+
 
 ## Dependencies
 
