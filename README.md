@@ -53,7 +53,9 @@ python appsubmitlocal_v2.py
 1.  Access the application in your web browser at http://localhost:8888.
 1.  Use a text box to set the year for your query.
 1.  Once you set the year, the app shows these two queries
+
   _ Number of employees hired for each job and department in a specific year divided by quarter. The table must be ordered alphabetically by department and job.
+
   _ List of IDs, names and number of employees hired of each department that hired more employees than the mean of employees hired in a specific year for all the departments, ordered by the number of employees hired (descending)
 
 
