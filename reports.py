@@ -12,7 +12,7 @@ from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
 from dash import  dash_table as dt
 
-# ... (Your existing code)
+
 
 # Create SQLAlchemy engine
 connect_string= 'postgresql://postgres:imaiden123@localhost:5435/globant_test'
@@ -40,7 +40,7 @@ app.layout = html.Div(
             value='2020',
             type='text'
         ),
-        html.P("Number of employees hired for each job and department in specific year divided by quarter. The table must be ordered alphabetically by department and job. the input for this is year"),
+        html.P("Number of employees hired for each job and department in a specific year divided by quarter. The table must be ordered alphabetically by department and job. the input for this is year"),
         dt.DataTable(id='data-table1',
             columns=[{"name": i, "id": i} for i in columns1],         
 
@@ -180,7 +180,6 @@ def query2(year,page_current,page_size):
             page_current*page_size:(page_current+ 1)*page_size
         ].to_dict('records') 
 
-# ... (Your existing code)
 
 # Run the application
 if __name__ == "__main__":
