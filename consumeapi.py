@@ -11,10 +11,10 @@ aws_region = 'us-west-2'
 
 
 # API endpoint for jobs.csv
-api_endpoint = 'https://kh24ljhp48.execute-api.us-west-2.amazonaws.com/dev/buckettestcvifiles/hired_employees_copia.csv'
+api_endpoint = 'https://kh24ljhp48.execute-api.us-west-2.amazonaws.com/dev/buckettestcvifiles/hired_employees.csv'
 
 # Path to the local file you want to upload
-file_path = 'hired_employees_copia.csv'
+file_path =   "project/app_uploaded_files/hired_employees.csv"
 
 # Read the file content
 with open(file_path, 'rb') as file:

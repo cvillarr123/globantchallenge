@@ -68,9 +68,17 @@ app.layout = html.Div(
             },
             multiple=True,
         ),
-        html.H2("File List"),
-        html.Ul(id="file-list"),
-        html.Ul(id="table-list"),
+        
+        dcc.Loading(
+            id="loadingMap",
+            type="default",
+            children=[ 
+                html.H2("File List"),
+                html.Ul(id="file-list"),
+                html.Ul(id="table-list"),
+                dcc.Interval(id='interval-component', interval=1*60*1000, n_intervals=0), 
+            ],
+        ),  
     ],
     style={"max-width": "500px"},
 )
@@ -138,9 +146,11 @@ def file_download_link(filename):
 @app.callback(
     Output("file-list", "children"),
     Output("table-list", "children"),
-    [Input("upload-data", "filename"), Input("upload-data", "contents")],
+    [Input("upload-data", "filename"), 
+     Input("upload-data", "contents"),
+     Input('interval-component', 'n_intervals')],
 )
-def update_output(uploaded_filenames, uploaded_file_contents):
+def update_output(uploaded_filenames, uploaded_file_contents,n_intervals):
     """Save uploaded files and regenerate the file list."""
     files_over_db = []
     if uploaded_filenames is not None and uploaded_file_contents is not None:
