@@ -1,19 +1,19 @@
 ﻿# globantchallenge
 
-##Overview
+## Overview
 
 This project provides a simple web application built with Flask and Dash for uploading CSV files, saving them to a local directory, and uploading the data to a PostgreSQL database. The application allows users to browse and download the uploaded files and displays information about the tables created in the database.
 
 
-##Table of Contents
-+ [Project Structure](https://github.com/cvillarr123/globantchallenge/edit/main/README.md## Project Structure)
+## Table of Contents
++ [Project Structure](url)
 + [link](doc:README.md#anchor-links## Project Structure)
 + Setup
 + Usage
 + Dependencies
 + License
 
-##Project Structure
+## Project Structure
 
 The main components of the project include:
 
