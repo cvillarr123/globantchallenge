@@ -6,8 +6,7 @@ This project provides a simple web application built with Flask and Dash for upl
 
 
 ## Table of Contents
-+ [Project Structure](url)
-+ [link](doc:README.md#anchor-links## Project Structure)
++ [Project Structure](https://github.com/cvillarr123/globantchallenge/blob/main/README.md#project-structure)
 + Setup
 + Usage
 + Dependencies
