@@ -18,9 +18,9 @@ The second Python file is a simple flash/dash web application  to generate two r
 
 The main components of the project include:
 
-** appsubmitlocal_v2.py **: The main application file containing the Flask and Dash setup, file upload functionality, and database interactions.
-** databaselib/loaderFiletoDB.py **: Module containing a class (LoadertoDb) for loading data from a Pandas DataFrame to a PostgreSQL database.
-** reports.py **: This application file contains the Flash and Dash setup, report query functionality, and database interactions, using Pandas DataFrame to a PostgreSQL database.
+**appsubmitlocal_v2.py**: The main application file containing the Flask and Dash setup, file upload functionality, and database interactions.
+**databaselib/loaderFiletoDB.py**: Module containing a class (LoadertoDb) for loading data from a Pandas DataFrame to a PostgreSQL database.
+**reports.py**: This application file contains the Flash and Dash setup, report query functionality, and database interactions, using Pandas DataFrame to a PostgreSQL database.
 
 ## Setup
 
